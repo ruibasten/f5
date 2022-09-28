@@ -1,0 +1,23 @@
+{
+    "policy": {
+        "name": "policy3",
+        "description": "created by declarative policy",
+        "template": {
+            "name": "POLICY_TEMPLATE_RAPID_DEPLOYMENT"
+        },
+		"applicationLanguage": "utf-8",
+        "enforcementMode": "transparent",
+        "server-technologies": [
+            {
+                "serverTechnologyName": "MySQL"
+            },
+			{
+                "serverTechnologyName": "Ember.js"
+            }
+        ],
+        "signature-settings": {
+            "signatureStaging": true
+        },
+    },
+    "modifications": []
+}
