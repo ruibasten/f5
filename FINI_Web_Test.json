@@ -36,8 +36,8 @@
         "general": 
             {
                 "trustXff": true,
-                "customXffHeaders": "True-Client-IP"
-            },
+                "customXffHeaders": ["True-Client-IP"]
+                                     },
         "signature-settings": {
             "signatureStaging": true
         }
