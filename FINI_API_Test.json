@@ -33,14 +33,11 @@
                 "serverTechnologyName": "XML"
             }
         ],
-        "general": [
+        "general": 
             {
-                "trustXff": true
-            },
-            {
+                "trustXff": true,
                 "customXffHeaders": "True-Client-IP"
-            }
-        ],
+            },
         "signature-settings": {
             "signatureStaging": true
         }
