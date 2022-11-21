@@ -1,0 +1,105 @@
+{
+    "policy": {
+        "name": "FINI_API_Test",
+        "description": "created by declarative policy",
+        "template": {
+            "name": "POLICY_TEMPLATE_RAPID_DEPLOYMENT"
+        },
+        "applicationLanguage": "utf-8",
+        "enforcementMode": "transparent",
+        "server-technologies": [
+            {
+                "serverTechnologyName": "Apache/NCSA HTTP Server"
+            },
+            {
+                "serverTechnologyName": "Java Servlets/JSP"
+            },
+            {
+                "serverTechnologyName": "JavaScript"
+            },
+            {
+                "serverTechnologyName": "Oracle"
+            },
+            {
+                "serverTechnologyName": "React"
+            },
+            {
+                "serverTechnologyName": "Redis"
+            },
+            {
+                "serverTechnologyName": "Unix/Linux"
+            },
+            {
+                "serverTechnologyName": "XML"
+            }
+        ],
+        "general": {
+                "trustXff": true,
+                "customXffHeaders": ["True-Client-IP"]
+        },
+		"ip-intelligence": {
+			"enabled": true,
+			"ipIntelligenceCategories" : [
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Anonymous Proxy"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "BotNets"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Cloud-based Services"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Denial of Service"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Mobile Threats"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Phishing Proxies"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Scanners"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Spam Sources"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Tor Proxies"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Web Attacks"
+			},
+			{
+				"alarm": true,
+				"block": true,
+				"category": "Windows Exploits"
+			}
+			]
+		},
+        "signature-settings": {
+            "signatureStaging": true
+        }
+    },
+    "modifications": []
+}
